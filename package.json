@@ -1,0 +1,41 @@
+{
+  "name": "@ha/react-native-horizontal-picker",
+  "description": "react-native-horizontal-picker",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "author": "Ha Jeong Hun <hajh1994@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hajeonghun/react-native-horizontal-picker.git"
+  },
+  "keywords": [
+    "react native",
+    "horizontal picker",
+    "number picker",
+    "number horizontal",
+    "number horizontal picker"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@tsconfig/react-native": "^3.0.2",
+    "@types/react": "^18.2.20",
+    "babel-preset-react-native": "^4.0.1",
+    "react": "^18.2.0",
+    "react-native": "^0.72.4",
+    "typescript": "^5.1.3"
+  }
+}
