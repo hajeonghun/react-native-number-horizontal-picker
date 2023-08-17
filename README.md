@@ -4,8 +4,7 @@
 - **It can also be used as a basic design and can be customized.** 
 
 ### NPM
-[![npm version](https://badge.fury.io/js/react-native-number-horizontal-picker.svg)](https://www.npmjs.com/package/react-native-number-horizontal-picker
-)
+[![npm version](https://badge.fury.io/js/react-native-number-horizontal-picker.svg)](https://www.npmjs.com/package/react-native-number-horizontal-picker)
 
 ### Github Page - Docs
 https://github.com/hajeonghun/react-native-horizontal-picker
