@@ -61,8 +61,26 @@ function App() {
 * Usage - Custom Thumb and Item 
 ```typescript
 import HorizontalPicker from '@ha/react-native-horizontal-picker';
-import { Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
+
+// Custom Item Style
+const styles = StyleSheet.create({
+  block: {
+    backgroundColor: 'transparent',
+    alignSelf: 'center',
+    borderColor: '#979797',
+    height: 30,
+    borderRightWidth: 1,
+  },
+});
+
+// Custom Item Component
+function CustomItem(style: ViewStyle){
+  return (
+    <View style={StyleSheet.compose(styles.block, style)} />
+  );
+}
 
 function App() {
   // The Thumb element you desire.
