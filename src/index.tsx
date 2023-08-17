@@ -51,7 +51,7 @@ function HorizontalPicker({
         const calculatedWidth = Math.round(
           nativeEvent.layout.width / VISIBLE_ITEM_COUNT,
         );
-        console.log('onLayout: ', calculatedWidth);
+
         setOneItemWidth(calculatedWidth);
     }
 
