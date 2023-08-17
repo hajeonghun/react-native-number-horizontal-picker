@@ -1,10 +1,4 @@
-import React, {
-    ReactElement,
-    useCallback,
-    useEffect,
-    useRef,
-    useState,
-} from 'react';
+import React, {ReactElement, useCallback, useEffect, useRef, useState,} from 'react';
 import {
     FlatList,
     LayoutChangeEvent,
@@ -15,7 +9,7 @@ import {
     ViewStyle,
 } from 'react-native';
 import DefaultItem from './DefaultItem';
-import { ListRenderItemInfo } from '@react-native/virtualized-lists/Lists/VirtualizedList';
+import {ListRenderItemInfo} from '@react-native/virtualized-lists/Lists/VirtualizedList';
 
 const MULTIPLICITY = 1;
 const VISIBLE_ITEM_COUNT = 20;
@@ -26,7 +20,7 @@ interface HorizontalPickerProps {
     onChangeValue: (value: number) => void;
     customRenderItem?: (
       element: ListRenderItemInfo<number>,
-      width: number,
+      style: ViewStyle,
     ) => ReactElement;
     thumbElement?: ReactElement;
     focusValue?: number;
@@ -56,11 +50,6 @@ function HorizontalPicker({
     }
 
     function renderItem(element: ListRenderItemInfo<number>) {
-        if (customRenderItem) {
-            // Require width
-            return customRenderItem(element, oneItemWidth);
-        }
-
         const { index } = element;
         let style: ViewStyle = { width: oneItemWidth }; // Require width
 
@@ -70,6 +59,11 @@ function HorizontalPicker({
 
         if ((index + 1) % 10 === 0 && index + 1 <= maximumValue) {
             style = { ...style, height: 40, borderRightWidth: 3 };
+        }
+
+        if (customRenderItem) {
+            // Require width
+            return customRenderItem(element, style);
         }
 
         return <DefaultItem style={style} />;

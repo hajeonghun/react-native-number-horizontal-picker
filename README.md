@@ -26,7 +26,7 @@ https://github.com/hajeonghun/react-native-horizontal-picker
 | minimumValue | `number` | Required | Minimum value of measurement |
 | maximumValue | `number` | Required | Maximum value of measurement|
 | onChangeValue | `(value: number) => void;` | Required | Measured value during scroll event |
-| customRenderItem | `(element: ListRenderItemInfo<number>, width: number) => ReactElement` | View | This is a customizable block element, and refer to the attached Default image for the basic element |
+| customRenderItem | `(element: ListRenderItemInfo<number>, style: ViewStyle) => ReactElement` | View | This is a customizable block element, and refer to the attached Default image for the basic element |
 | thumbElement | `ReactElement` | View | This is a thumbElement. If you want to change, please provide the element. |
 | focusValue | `number` | minimumValue | The number to be focused on during the first rendering |
 
@@ -93,20 +93,20 @@ function App() {
     />
   );
 
-  function renderItem(element: ListRenderItemInfo<number>, width: number) {
+  /**
+   * Please do not change the 'width' property under any circumstances. 
+   * This is related to rendering optimization.
+   */
+  function renderItem(element: ListRenderItemInfo<number>, style: ViewStyle) {
     const { index } = element;
-    /**
-     * Require width
-     * Because, scrolling is calculated based on this value.
-     */
-    let style: ViewStyle = { width };
+    let overWriteStyle: ViewStyle = { };
 
     // example code
     if (index < 9) {
-      style = { ...style, borderRightWidth: 0 };
+      overWriteStyle = { ...style, borderRightWidth: 0 };
     }
     // Return the component you want to customize.
-    return <CustomItem style={style} />;
+    return <CustomItem style={overWriteStyle} />;
   }
   
   return (
