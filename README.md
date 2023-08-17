@@ -3,6 +3,10 @@
 - This is a performance-optimized numeric horizontal picker.
 - **It can also be used as a basic design and can be customized.** 
 
+### NPM
+[![npm version](https://badge.fury.io/js/react-native-number-horizontal-picker.svg)](https://www.npmjs.com/package/react-native-number-horizontal-picker
+)
+
 ### Github Page - Docs
 https://github.com/hajeonghun/react-native-horizontal-picker
 
@@ -33,14 +37,14 @@ https://github.com/hajeonghun/react-native-horizontal-picker
 ### Getting started
 Installation
 ```
-npm i @ha/react-native-horizontal-picker
+npm i react-native-number-horizontal-picker
 or
-yarn add @ha/react-native-horizontal-picker
+yarn add react-native-number-horizontal-picker
 ```
 
 * Usage - Default
 ```typescript
-import HorizontalPicker from '@ha/react-native-horizontal-picker';
+import HorizontalPicker from 'react-native-number-horizontal-picker';
 import { Text, View } from 'react-native';
 
 function App() {   
@@ -60,7 +64,7 @@ function App() {
 
 * Usage - Custom Thumb and Item 
 ```typescript
-import HorizontalPicker from '@ha/react-native-horizontal-picker';
+import HorizontalPicker from 'react-native-number-horizontal-picker';
 import { StyleSheet, Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 

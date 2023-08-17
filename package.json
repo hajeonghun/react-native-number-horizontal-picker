@@ -1,6 +1,6 @@
 {
-  "name": "@ha/react-native-horizontal-picker",
-  "description": "react-native-horizontal-picker",
+  "name": "react-native-number-horizontal-picker",
+  "description": "react-native-number-horizontal-picker",
   "version": "1.0.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
