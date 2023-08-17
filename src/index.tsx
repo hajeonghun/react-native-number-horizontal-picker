@@ -102,7 +102,7 @@ function HorizontalPicker({
             return;
         }
 
-        scrollToElement(focusValue as number); // 타입 컴파일러가 제대로 추론 못함.
+        setTimeout(() => scrollToElement(focusValue as number), 0); // 타입 컴파일러가 제대로 추론 못함.
     }, [focusValue, scrollToElement]);
     return (
       <View style={styles.mainContainer} onLayout={onLayout}>
