@@ -2,27 +2,20 @@
 
 - This is a performance-optimized numeric horizontal picker.
 - **It can also be used as a basic design and can be customized.** 
+- There is also a vertical picker library -> [`react-native-number-vertical-picker`](https://www.npmjs.com/package/react-native-number-vertical-picker)
 
 ### NPM
 [![npm version](https://badge.fury.io/js/react-native-number-horizontal-picker.svg)](https://www.npmjs.com/package/react-native-number-horizontal-picker)
 
 ### Github Page - Docs
-https://github.com/hajeonghun/react-native-horizontal-picker
+https://github.com/hajeonghun/react-native-number-horizontal-picker
 
-### Preview (Default)
-* **iPhone**  
-<img width="30%" src="https://github.com/hajeonghun/react-native-horizontal-picker/assets/52861562/5e4891c2-3138-4245-8b9c-8685bee683ed" />  
-
-* **Android**  
-<img width="30%" src="https://github.com/hajeonghun/react-native-horizontal-picker/assets/52861562/3b35a084-faa3-4b66-bad9-6e8620b8844c" />  
-
-### Preview (Custom Thumb)
-* **iPhone**  
-<img width="30%" src="https://github.com/hajeonghun/react-native-horizontal-picker/assets/52861562/b10bc147-8aae-4ccb-a38e-83d91e78adf0" />  
-
-* **Android**  
-<img width="30%" src="https://github.com/hajeonghun/react-native-horizontal-picker/assets/52861562/ca0a771b-fe1c-4e32-a489-1d5f2c76b28f" />
-
+### Preview
+| Design | iOS | Android |
+ |-------|-----|---------|
+| Default | <img width="100%" src="https://github.com/hajeonghun/react-native-horizontal-picker/assets/52861562/5e4891c2-3138-4245-8b9c-8685bee683ed" /> | <img width="100%" src="https://github.com/hajeonghun/react-native-horizontal-picker/assets/52861562/3b35a084-faa3-4b66-bad9-6e8620b8844c" /> |
+| Custom Thumb | <img width="100%" src="https://github.com/hajeonghun/react-native-horizontal-picker/assets/52861562/b10bc147-8aae-4ccb-a38e-83d91e78adf0" /> | <img width="100%" src="https://github.com/hajeonghun/react-native-horizontal-picker/assets/52861562/ca0a771b-fe1c-4e32-a489-1d5f2c76b28f" /> |
+  
 ### Props
 | Property | Type | Default | Description |
  |----------|------|---------|-------------|
